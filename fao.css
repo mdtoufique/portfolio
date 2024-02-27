@@ -1,0 +1,41 @@
+.aside .nav-toggler
+{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor:pointer;
+    position: fixed;
+    left:340px;
+    top:40px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+
+}
+.aside .nav-toggler span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 18px;
+    height: 2.3px;
+    background-color: var(--skin-color);
+}
+
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 1.8px;
+    background-color: var(--skin-color);
+    position: absolute;
+}
+
+.aside .nav-toggler span::before {
+    top: -6px;
+}
+
+.aside .nav-toggler span::after {
+    bottom: -6px;
+}
