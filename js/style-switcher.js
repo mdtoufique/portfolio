@@ -1,13 +1,18 @@
 const togle=document.querySelector(".style-switcher-toggler");
+let myTimeout;
 togle.addEventListener("click",()=>{
+    
+    clearTimeout(myTimeout);
     document.querySelector(".style-switcher").classList.toggle("op");
-    setTimeout(delayedFunction=>
+    myTimeout=setTimeout(delayedFunction=>
         {
             if(document.querySelector(".style-switcher").classList.contains("op"))
             {
+                
                 document.querySelector(".style-switcher").classList.toggle("op");
             }
         }, 4000);
+     
 });
 
 
